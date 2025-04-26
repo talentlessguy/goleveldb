@@ -9,7 +9,7 @@ package table
 import (
 	"bytes"
 
-	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
 	"github.com/syndtr/goleveldb/leveldb/iterator"

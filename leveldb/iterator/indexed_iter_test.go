@@ -9,7 +9,7 @@ package iterator_test
 import (
 	"sort"
 
-	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/v2"
 
 	"github.com/syndtr/goleveldb/leveldb/comparer"
 	. "github.com/syndtr/goleveldb/leveldb/iterator"
