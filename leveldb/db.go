@@ -187,9 +187,9 @@ func Open(stor storage.Storage, o *opt.Options) (db *DB, err error) {
 			s.release()
 		}
 	}()
-
 	err = s.recover()
 	if err != nil {
+
 		if !os.IsNotExist(err) || s.o.GetErrorIfMissing() || s.o.GetReadOnly() {
 			return
 		}
@@ -931,6 +931,7 @@ func (db *DB) GetSnapshot() (*Snapshot, error) {
 // GetProperty returns value of the given property name.
 //
 // Property names:
+//
 //	leveldb.num-files-at-level{n}
 //		Returns the number of files at level 'n'.
 //	leveldb.stats
